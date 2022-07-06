@@ -1,0 +1,111 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIAÇÕES */
+:root{
+  --bg-color: #E5E5E5;
+  --text-color: #00082F;
+  --primary-color: #4263EB;
+  --primary-color-dark: #364FC7;
+  --aherf-biazdev: #551A8B;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #FFFFFF;
+  --aherf-biazdev: #FFFFFF;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+body.pink-dark{
+  --bg-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+  --text-color: #FFFFFF;
+  --aherf-biazdev: #FFFFFF;
+}
+body.roxo-dark{
+  --bg-color: #001848;
+  --primary-color: #906090;
+  --primary-color-dark: #301860;
+  --text-color: #FFFFFF;
+  --aherf-biazdev: #FFFFFF;
+}
+body.vinho{
+  --bg-color: #8c2318;
+  --primary-color: #88a65e;
+  --primary-color-dark: #88a65e;
+  --text-color: #FFFFFF;
+  --aherf-biazdev: #FFFFFF;
+}
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  text-align: center;
+  margin: 60px auto;
+  width: 300px;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color) ;
+  padding: 4px;
+}
+h1{
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.username{
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: .6;
+  margin-bottom: 30px;
+}
+/* REDES SOCIAS */
+ul{
+  list-style: none;
+}
+ul li a{
+  background-color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  opacity: .8;
+  transition: opacity 400ms;
+}
+ul li a:hover{
+  background-color: var(--primary-color-dark);
+  opacity: 1;
+}
+/* FOOTER */
+footer{
+  margin-top: 50px;
+}
+footer p{
+  color: var(--text-color);
+}
+footer p a{
+  text-decoration: none;
+  color: var(--aherf-biazdev);
+}
